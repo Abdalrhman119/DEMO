@@ -20,7 +20,12 @@ namespace DEMO
         public int Id { get; set; }
         public string Title { get; set; }
         public decimal Price { get; set; }
-
+    public Movie(int id, string title, decimal price)
+    {
+        Id = id;
+        Title = title;
+        Price = price;
+    }
         public override string ToString()
         {
             return $"Id: {Id}, Title: {Title}, Price: {Price}";
